@@ -52,8 +52,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Legislative Leadership Institute | Governance & Policy Excellence",
-  description: "Empowering legislative bodies with expert training, policy formulation, and governance consulting services for transformative public sector leadership",
+  title: "Ann | Musau",
+  description: "Empowering Christian Lives",
 };
 
 export default function RootLayout({
