@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { FiMail, FiArrowRight, FiSend } from 'react-icons/fi';
 import { useState } from 'react';
+import Link from 'next/link';
 
 export default function NewsletterSection() {
   const [email, setEmail] = useState('');
@@ -135,7 +136,9 @@ export default function NewsletterSection() {
             whileHover={{ gap: 4 }}
           >
             <FiArrowRight className="text-xl" />
+            <Link href="/contact" className="">
             Visit Our Contact Page
+            </Link>
           </motion.a>
         </motion.div>
 

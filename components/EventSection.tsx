@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 import { FiCalendar, FiMapPin, FiClock, FiArrowRight } from 'react-icons/fi';
 
 const events = [
@@ -242,7 +243,9 @@ export default function EventsSection() {
               whileHover={{ scale: 1.05 }}
             >
               <FiCalendar className="text-xl" />
-              Full Events Calendar
+               <Link href="/events" className="">
+               Full Events Calendar
+                </Link>
             </motion.button>
           </div>
         </motion.div>

@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { FiHeart, FiGift, FiDollarSign, FiCreditCard } from 'react-icons/fi';
 import { useState } from 'react';
+import Link from 'next/link';
 
 export default function DonationSection() {
   const [amount, setAmount] = useState(50);
@@ -246,7 +247,9 @@ export default function DonationSection() {
               whileHover={{ scale: 1.05 }}
             >
               <FiHeart className="text-xl" />
+              <Link href="/contact" className="">
               Learn More
+                </Link>
             </motion.button>
           </div>
         </motion.div>

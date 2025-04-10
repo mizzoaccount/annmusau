@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Link from 'next/dist/client/link';
 import { FiShoppingBag, FiStar, FiDownload, FiTruck } from 'react-icons/fi';
 
 const products = [
@@ -229,7 +230,9 @@ export default function StoreSection() {
               whileHover={{ scale: 1.05 }}
             >
               <FiShoppingBag className="text-xl" />
-              Visit Full Store
+               <Link href="/resources" className="">
+               Visit Full Store
+                </Link>
             </motion.button>
           </div>
         </motion.div>

@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 import { FiBookOpen, FiCalendar, FiArrowRight } from 'react-icons/fi';
 
 const devotionals = [
@@ -151,7 +152,9 @@ export default function DevotionalsSection() {
         >
           <button className="inline-flex items-center gap-3 bg-gradient-to-r from-red-600 to-red-700 text-white px-8 py-4 rounded-full font-medium hover:shadow-lg transition-all">
             <FiBookOpen className="text-xl" />
+            <Link href="/devotion" className="">
             View All Devotionals
+            </Link>
             <motion.div
               animate={{ x: [0, 5, 0] }}
               transition={{ duration: 2, repeat: Infinity }}

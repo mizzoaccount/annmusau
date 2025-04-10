@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { FiArrowRight, FiHeart } from 'react-icons/fi';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function HeroSection() {
   return (
@@ -102,7 +103,11 @@ export default function HeroSection() {
               className="bg-red-600 text-white px-6 py-3 md:px-8 md:py-4 rounded-full flex items-center gap-2 text-base md:text-lg font-semibold hover:bg-red-700 transition-all"
             >
               <FiHeart className="text-xl" />
+              <Link href="/donate" className="text-white font-medium">
               Support the Ministry
+            </Link>
+              
+              
             </motion.button>
             
             <motion.button
@@ -110,7 +115,9 @@ export default function HeroSection() {
               whileTap={{ scale: 0.95 }}
               className="border-2 border-white text-white px-6 py-3 md:px-8 md:py-4 rounded-full flex items-center gap-2 text-base md:text-lg hover:bg-white hover:text-black transition-all"
             >
+                  <Link href="/events" className="text-white  hover:text-black font-medium">
               Upcoming Events
+              </Link>
               <FiArrowRight className="text-xl" />
             </motion.button>
           </motion.div>

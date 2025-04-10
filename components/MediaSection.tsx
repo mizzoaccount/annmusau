@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 import { FiPlay, FiYoutube, FiClock } from 'react-icons/fi';
 
 const mediaItems = [
@@ -122,7 +123,9 @@ export default function MediaSection() {
         >
           <button className="inline-flex items-center gap-2 bg-red-600 text-white px-8 py-4 rounded-full font-medium hover:bg-red-700 transition-all">
             <FiYoutube className="text-xl" />
-            View Full Archive
+                 <Link href="/sermons" className="">
+                 View Full Archive
+                 </Link>
           </button>
         </motion.div>
       </div>
