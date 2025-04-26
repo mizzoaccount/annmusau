@@ -14,10 +14,10 @@ export default function NavBar() {
   const links = [
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
-    { name: 'Sermons', href: '/sermons' },
+    { name: 'Empowerment', href: '/sermons' },
     { name: 'Events', href: '/events' },
-    { name: 'Devotions', href: '/devotion' },
-    { name: 'Resources', href: '/resources' },
+   // { name: 'Devotions', href: '/devotion' },
+    { name: 'Watch live', href: '/resources' },
     { name: 'Contact', href: '/contact' },
   ];
 
@@ -98,7 +98,7 @@ export default function NavBar() {
                 className="flex items-center gap-2 bg-red-600 text-white px-6 py-2 rounded-full text-sm hover:bg-red-700 transition-all"
               >
                 <FiHeart className="text-sm" />
-                Donate
+                Support
               </motion.a>
             </div>
 

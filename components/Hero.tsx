@@ -76,7 +76,7 @@ export default function HeroSection() {
                 Anne Musau
               </span>
               <br />
-              <span className="text-white mt-2 inline-block">Ministries</span>
+              <span className="text-white mt-2 inline-block">Solutions</span>
             </motion.h1>
           </div>
 
