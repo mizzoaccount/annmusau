@@ -17,7 +17,7 @@ export default function NavBar() {
     { name: 'Empowerment', href: '/sermons' },
     { name: 'Events', href: '/events' },
    // { name: 'Devotions', href: '/devotion' },
-    { name: 'Watch live', href: '/resources' },
+    { name: 'Resources', href: '/resources' },
     { name: 'Contact', href: '/contact' },
   ];
 
